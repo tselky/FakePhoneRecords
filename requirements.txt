@@ -1,0 +1,7 @@
+numpy
+sklearn
+tensorflow
+matplotlib
+pandas
+time
+random
