@@ -1,3 +1,9 @@
+#######################################################################################################################
+# Program to simulate call records based on conditional probability and a hidden weight system.
+# This script was used to generate synthetic datasets to help train a spam call detection model
+# This was created out of novelty and was not intended to be used to stop real spam calls!
+#######################################################################################################################
+
 # import module
 import random as r
 import pandas as pd
@@ -5,12 +11,12 @@ import time as t
 from numpy.random import choice
 
 
-#Program to simulate call records based on conditional probability and a hidden weight system.
-#Some labels are influenced by the population of others
-#A light/medium/heavy weight score system is used in the background to influence the column that flags a call as suspiscious or not.
+# Program to simulate call records based on conditional probability and a hidden weight system.
+# Some labels are influenced by the population of others
+# A light/medium/heavy weight score system is used in the background to influence the column that flags a call as suspiscious or not.
 
 
-#All Michigan areacodes
+# All Michigan areacodes
 local_codes = ['231', '248', '269', '313', '517', '586', '616', '734', '810', '906', '947', '989']
 
 data = {
@@ -29,7 +35,7 @@ def append_data(arr: dict):
     except Exception as e:
         print("Append Data failed: ", e)
 
-#Might rename
+
 #Generates a phone number, with an 85% chance to be a michigan number
 def generate_call_record():
     sampleList = [r.sample(range(1000000000, 9999999999), 1)[0],
