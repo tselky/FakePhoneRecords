@@ -4,4 +4,4 @@
  
  The model is intended to be trained with data from GeneratorNum.py as it requires the 1/0 column population to work.
  
- To better visualize how the data looks, Generator.py will display much more information such as call duration and yes/no columns and the actual phone numbers.
+ To better visualize how the data looks, Generator.py will display much more information such as call duration, yes/no columns and the actual phone numbers.
